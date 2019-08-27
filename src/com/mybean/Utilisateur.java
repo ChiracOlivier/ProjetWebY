@@ -1,4 +1,4 @@
-package com.com.mybean;
+package com.mybean;
 
   public class Utilisateur {
 
