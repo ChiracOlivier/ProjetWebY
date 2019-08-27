@@ -30,7 +30,13 @@ public final class InscriptionForm {
 
     Utilisateur utilisateur = new Utilisateur();
 
-   
+    try {
+      validationEmail( email );
+    } catch ( Exception e ) {
+      setErreur( CHAMP_EMAIL, e.getMessage() );
+    }
+    utilisateur.setEmail( email );
+
     try {
       validationMotsDePasse( motDePasse, confirmation );
     } catch ( Exception e ) {
