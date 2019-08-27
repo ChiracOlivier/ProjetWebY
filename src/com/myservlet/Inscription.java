@@ -9,9 +9,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 public class Inscription extends HttpServlet {
-  public static final String ATT_USER = "utilisateur";
-  public static final String ATT_FORM = "form";
-  public static final String VUE = "/WEB-INF/inscription.jsp";
+  private static final String ATT_USER = "utilisateur";
+  private static final String ATT_FORM = "form";
+  private static final String VUE = "/WEB-INF/inscription.jsp";
 
   public void doGet( HttpServletRequest request, HttpServletResponse response ) throws ServletException, IOException{
     /* Affichage de la page d'inscription */
