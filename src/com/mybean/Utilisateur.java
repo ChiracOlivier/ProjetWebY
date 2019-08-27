@@ -6,7 +6,13 @@ package com.mybean;
     private String motDePasse;
     private String nom;
 
-  
+    public void setEmail(String email) {
+      this.email = email;
+    }
+    public String getEmail() {
+      return email;
+    }
+
     public void setMotDePasse(String motDePasse) {
       this.motDePasse = motDePasse;
     }
